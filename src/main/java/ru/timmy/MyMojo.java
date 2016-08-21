@@ -66,22 +66,6 @@ public class MyMojo
     private MavenProject project;
 
     /**
-     * @parameter expression="${localRepository}"
-     */
-    protected ArtifactRepository m_localRepository;
-
-    /**
-     * @parameter default-value="${localRepository}"
-     */
-    private org.apache.maven.artifact.repository.ArtifactRepository
-            localRepository;
-
-    /**
-     * @parameter default-value="${project.remoteArtifactRepositories}"
-     */
-    private List remoteRepositories;
-
-    /**
      * @component
      */
     private org.apache.maven.repository.RepositorySystem repository;
